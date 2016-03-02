@@ -17,7 +17,14 @@ class SiteController extends XFrontBase
      */
     public function actionIndex ()
     {
-      $this->render('index',array('model'=>$model));
+        $session =  parent::_sessionGet('_user');
+       if(!empty($session)){ 
+           header('location:'.$this->createUrl('/user/index'));
+        exit;
+       }
+        header('location:'.$this->createUrl('/user/login'));
+        exit;
+         $this->render('/user/login', array('model' => $model)); 
     }
 
 }

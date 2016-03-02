@@ -24,25 +24,23 @@ class User extends XBaseModel {
      */
     public function rules() {
         return array(
-            array('username, password, captcha', 'required', 'on' => 'login'),
-            array('username, email, password,captcha', 'required', 'on' => 'create'),
+            array('username, password', 'required', 'on' => 'login'),
+            array('username, email, password', 'required', 'on' => 'create'),
             array('username', 'unique', 'on' => 'create'),
             array('email', 'email'),
-            array('captcha', 'captcha', 'allowEmpty' => !extension_loaded('gd'), 'on' => 'login,create'),
             array('group_id', 'numerical', 'integerOnly' => true),
             array('username, city, district,city,province', 'length', 'max' => 50),
             array('email', 'length', 'max' => 60),
-            array('password, hash_string', 'length', 'max' => 32),
-            array('realname, brithday, province, post_code, login_count, last_login_time, last_update_time, create_time', 'length', 'max' => 10),
-            array('msn, portrait, portrait_thumb', 'length', 'max' => 100),
+            array('password', 'length', 'max' => 32),
+            array('realname, province, login_count, last_login_time, last_update_time, create_time', 'length', 'max' => 10),
             array('qq, telephone, mobile, register_ip, last_login_ip,company_regtime,company_year', 'length', 'max' => 15),
-            array('sex', 'length', 'max' => 3),
+            array('company_shareholder', 'length', 'min' => 6),
             array('company_code, company_regmoney,company_name,will_txt', 'length', 'max' => 255),
             array('status_is', 'length', 'max' => 6),
             array('intro', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, username, email, password, realname, msn, qq, brithday, sex, group_id, portrait, portrait_thumb, province, city, area, http_url, telephone, mobile, post_code, address, intro, hash_string, status_is, register_ip, login_count, last_login_time, last_login_ip, last_update_time, create_time', 'safe', 'on' => 'search'),
+            array('id, username, email, password, realname, qq,  group_id,  province,company_shareholder, city, area, http_url, telephone, mobile, address, intro, hash_string, status_is, register_ip, login_count, last_login_time, last_login_ip, last_update_time, create_time', 'safe', 'on' => 'search'),
         );
     }
 
@@ -53,7 +51,7 @@ class User extends XBaseModel {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'userGroup' => array(self::BELONGS_TO, 'UserGroup', 'id', 'foreignKey' => 'group_id', 'alias' => 'group', 'select' => 'id,group_name'),
+            'userGroup' => array(self::BELONGS_TO, 'Admin', 'id', 'foreignKey' => 'group_id', 'alias' => 'admin', 'select' => 'id,username'),
         );
     }
 

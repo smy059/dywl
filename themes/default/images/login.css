@@ -1,0 +1,288 @@
+@import url(reset.css);
+fieldset{
+  border: none;
+}
+a{
+  text-decoration: none;
+  color: #ed5f4e;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+	min-width: 1000px;
+}
+header,footer {
+  width: 990px;
+  margin: 10px auto;
+}
+h2 {
+  display: none;
+}
+input{
+  outline: none;
+}
+input,img,label{
+  vertical-align: middle;
+}
+#body{
+  font:normal 1rem "宋体";
+  height: 475px;
+  background: #1e89e0 url("loginImg.png") no-repeat center;
+
+}
+#body section {
+  width: 345px;
+  padding: 40px 0 0 645px;
+  margin: 0 auto;
+position: relative;
+}
+#body section h3{
+  position: absolute;
+  bottom:0;
+  right: 0;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  background:url("../images/login-tab.png") no-repeat -60px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+#body section .content{
+  background: #fff;
+  right: 0;
+  top: 20px;
+}
+#body section form{
+  padding: 20px;
+  position: relative;
+  overflow:hidden;
+}
+#body section form fieldset{
+  display: none;
+}
+#body section form fieldset:first-child{
+  display: block;
+}
+legend{
+	display:block;
+	width:100%;
+  color: #666;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: "microsoft yahei";
+}
+.erWeiMa legend{
+	text-align:center;
+}
+label{
+  display: inline-block;
+}
+.name,.pwd{
+  border: 1px solid #bdbdbd;
+  height: 38px;
+  width: 266px;
+  padding-left:38px;
+  font-size: 0;
+  background: url("loginIcon.png") no-repeat 0 0;
+  margin-bottom: 10px;
+}
+.pwd{
+  background-position:-48px 0;
+}
+.tip{
+  background-position:-48px 0;
+  border: 0px solid #bdbdbd;
+  height: 20px;
+  width: 266px;
+  padding-left:38px;
+  margin-bottom: 10px;
+  font-size:12px;
+  color: red;
+  display:none;
+}
+.auto,.safe{
+  font-size: 12px;
+  margin-right: 15px;
+}
+label input[type="text"],label input[type="password"]{
+  border:none;
+  border-left: 1px solid #bdbdbd;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px 0 10px 10px;
+  *padding:9px 0 9px 9px;
+  width: 255px;
+  overflow: hidden;
+  font-size: 14px;
+}
+label input[type="checkbox"]{
+  margin:0 5px 0 0;
+}
+.btn{
+  display: block;
+  background:#ed5f4e;
+  border: 1px solid #cb2a2d;
+  height: 18px;
+  line-height: 18px;
+  padding:7px 0;
+  text-align: center;
+  color: #fff;
+  margin: 15px 0 20px;
+  letter-spacing: 15px;
+  overflow:hidden;
+  font-family: "microsoft yahei";
+}
+.btn:hover{
+  text-decoration: none;
+}
+dl{
+  font-size: 12px;
+  color: #999;
+}
+dd{
+  margin: 10px 0 10px -10px;
+}
+dd a{
+  color: #666;
+  margin: 0 10px;
+}
+#body section form fieldset >.link{
+  position: absolute;
+  right: 20px;
+  top:22px;
+  font-size: 14px;
+  padding-left: 20px;
+  line-height:16px;
+}
+#body section form fieldset div >.link{
+   font-size: 12px;
+  color: #999;
+  position: absolute;
+  right: 20px;
+  /*top: 187px;*/
+  top: 200;
+}
+.erWeiMa{
+  text-align: center;
+  margin: 40px 0;
+}
+#body section h3.computer{
+  background-position: 0 -60px;
+}
+.erWeiMa legend{
+  font-size: 16px;
+}
+.erWeiMa img{
+  width: 147px;
+  height: 147px;
+  padding:8px;
+  border: 1px #eee solid;
+}
+.erWeiMa ul{
+  margin-bottom: 5px;
+}
+.erWeiMa li{
+  display: inline-block;
+  *display:inline;
+  *zoom:1;
+  font-size: 12px;
+  line-height:32px;
+  margin: 0 10px;
+}
+.erWeiMa li a{
+  color: #666;
+}
+.erWeiMa p{
+  background: #F6DCDF;
+  color: #999;
+  font-size: 12px;
+  padding:3px 10px;
+  display: inline;
+  position:relative;
+}
+.erWeiMa p:before{
+  content: "";
+  width: 0;
+  height: 0;
+  border:5px solid transparent;
+  border-bottom: 5px #F6DCDF solid;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+footer{
+  font-size: 12px;
+  color: #666;
+  margin: 20px auto;
+  position: relative;
+}
+footer nav a{
+  margin: 0 10px;
+  color: #666;
+}
+footer p{
+  position: absolute;;
+  right: 0;
+  top: 0;
+}
+.vivo-search {
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
+
+.vivo-search .search-box {
+	width: 500px;
+	height: 40px;
+	top: 3px;
+	left: 50%;
+	border:1px solid #BDBDBD;
+	z-index: 9999;
+}
+
+.vivo-search .search-box input {
+	width: 350px;
+	height: 20px;
+	line-height: 20px;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #555;
+	border: none;
+	background: #fff;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.vivo-search .search-box button {
+	width: 110px;
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	border: none;
+	overflow: hidden;
+	vertical-align: middle;
+	background: #008cd6;
+	outline: none;
+	cursor: pointer;
+	-webkit-transition: background .2s ease-in-out;
+	-moz-transition: background .2s ease-in-out;
+	-ms-transition: background .2s ease-in-out;
+	transition: background .2s ease-in-out;
+	border-radius: 0px;
+}
+
+.vivo-search .search-box button:hover {
+	background: #0074b2;
+}
+
+.vivo-search .search-box button:active {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
+	-ms-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset;
+}
+

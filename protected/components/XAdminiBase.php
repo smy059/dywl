@@ -251,6 +251,12 @@ class XAdminiBase extends Controller
             case 'admin':
                 return AdminGroup::model()->findAll();
                 break;
+            case 'user':
+                $criteria = new CDbCriteria();
+                $criteria->condition = " status_is ='Y' ";
+                return Admin::model()->findAll();
+                break;
+                
         }
     }
 

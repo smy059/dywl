@@ -1,0 +1,520 @@
+fieldset{ border:none}
+.fz12 {
+	font-size: 12px;
+}
+
+input {
+	padding: 8px 20px;
+	vertical-align: middle;
+}
+
+.main {
+	padding-bottom: 60px;
+	padding-top: 36px;
+}
+
+.main h1,.main h2,.main h3 {
+	padding-left: 10px;
+}
+
+.main h1 {
+	text-align: center;
+	color: #212222;
+	font-family: "microsoft yahei";
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 2em;
+	margin-bottom: 36px;
+}
+
+.main h2 {
+	background-color: #eee;
+	line-height: 2 !important;
+}
+
+.main h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.lireset2 {
+	padding-left: 10px;
+}
+.registerform table {
+	width: 100%;
+}
+.registerform {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.registerform .need {
+	color: #b20202;
+	margin-right: 5px;
+}
+
+.registerform td {
+	padding: 2px;
+	vertical-align: middle;
+	text-align: left;
+	height: 28px;
+	font-size: 12px;
+}
+.registerform thead td{
+	padding: 2px;
+	vertical-align: middle;
+	text-align: center;
+	height: 28px;
+	font-size: 12px;
+}
+
+.registerform th {
+	font-weight: bolder;
+	padding: 2px;
+	vertical-align: middle;
+	text-align: right;
+	height: 28px;
+	font-size: 12px;
+}
+.registerform select {
+	height: 26px;
+	overflow: hidden;
+	border: 1px solid #a5aeb6;
+	font-size: 14px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 3px;
+	*padding:0px;
+}
+.registerform input  {
+	width: 95%;
+	border: 1px solid #a5aeb6;
+	padding: 2px 2px;
+	height: 22px;
+	font-size:	12px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 3px;
+}
+.registerform input[type="radio"] {
+	width:14px;
+	height:14px;
+}
+.registerform input[type="checkbox"] {
+	width:14px;
+	height:14px;
+}
+.registerform input[type="password"] {
+	border: 1px solid #a5aeb6;
+	padding: 1px 1px;
+	height: 22px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 3px;
+}
+.registerform textarea {
+	width: 95%;
+	border: 1px solid #a5aeb6;
+	padding: 2px 2px;
+	height: 35px;
+	font-size:	12px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 3px;
+}
+
+.registerform .inputLong[type="text"] {
+	width: 98%;
+}
+.registerform .readonly[type="text"]{
+	background-color: #F7F8F9;
+}
+.registerform .readonlyLong[type="text"]{
+	width: 98%;
+	background-color: #F7F8F9;
+}
+.registerform .textareaLong {
+	width: 98%;
+}
+.registerform .readonlyTextarea {
+	background-color: #F7F8F9;
+	width: 98%;
+}
+.registerform .readonlySelect {
+	background-color: #F7F8F9;
+}
+
+.registerform label {
+	margin: 0 4px 0 4px;
+}
+
+.registerform .tip {
+	line-height: 20px;
+	color: #5f6a72;
+}
+
+
+.registerformalter select {
+	width: 124px;
+}
+
+
+.viewform {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.viewform .need {
+	color: #b20202;
+	margin-right: 5px;
+}
+
+.viewform td {
+	padding: 3px;
+	vertical-align: top;
+	text-align: left;
+	height: 30px;
+}
+
+.viewform th {
+	font-weight: bolder;
+	padding: 1px;
+	vertical-align: middle;
+	text-align: right;
+	height: 30px;
+	font-size: 14px;
+}
+.viewform input,.viewform textarea {
+	width: 98%;
+	border: 0px;
+	padding: 2px 2px;
+	height: 22px;
+	font-size:	14px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+}
+.swfupload {
+	vertical-align: top;
+}
+
+.passwordStrength {
+
+}
+
+.passwordStrength b {
+	font-weight: normal;
+}
+
+.passwordStrength b,.passwordStrength span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 16px;
+	line-height: 18px\9;
+	height: 16px;
+}
+
+.passwordStrength span {
+	width: 45px;
+	text-align: center;
+	background-color: #d0d0d0;
+	border-right: 1px solid #fff;
+}
+
+.passwordStrength .last {
+	border-right: none;
+}
+
+.passwordStrength .bgStrength {
+	color: #fff;
+	background-color: #71b83d;
+}
+
+#demo1 .passwordStrength {
+	margin-left: 8px;
+}
+
+.tipmsg {
+	padding: 0 10px;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+
+.document {
+	min-height: 800px;
+}
+
+.document .sidenav {
+	width: 170px;
+	background-color: #eee;
+	padding: 10px 10px 20px;
+}
+
+.document .sidenav h3 {
+	font-size: 14px;
+	padding: 5px 10px;
+	background-color: #e1e1e1;
+}
+
+.document .sidenav a {
+	color: #1870a9;
+}
+
+.document .content {
+	width: 750px;
+}
+
+.document .content dt {
+	background-color: #eee;
+	line-height: 2;
+	padding: 0 10px;
+}
+
+.document .content dt a {
+	color: #79a605;
+	padding: 5px 0;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+}
+
+.document .content dt a:hover,.document .content h3 a:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+.document .content dd {
+	padding: 15px 0;
+}
+
+.document .content h3 {
+	color: #333;
+	font-size: 16px;
+}
+
+.document .content p {
+	padding: 0 0 16px 10px;
+	margin-bottom: 0;
+}
+
+.document .content .intro {
+	margin-bottom: 16px;
+}
+
+.document .content .intro p {
+	padding-bottom: 0;
+}
+
+.document .content .intro pre {
+	padding-left: 10px;
+}
+
+.document .content .wp_syntax {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.document .sidenav .lireset2 {
+	padding-left: 0;
+}
+
+.document .sidenav li ul {
+	display: none;
+}
+
+.toTop {
+	display: block;
+	width: 48px;
+	height: 49px;
+	overflow: hidden;
+	text-indent: -20000px;
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+	display: none;
+	background: url(../images/totop.png) no-repeat;
+	_position: absolute;
+	_top: expression(documentElement.scrollTop +
+		documentElement.clientHeight-this.offsetHeight-20);
+}
+.line {
+	height: 2px;
+	line-height: 2px;
+	border-bottom: 1px dashed #C8C7C7;
+}
+.tableInfo td {
+	font-weight: bolder;
+	padding: 1px;
+	vertical-align: middle;
+	height: 30px;
+	font-size: 14px;
+	color: #638EC7;
+}
+button {
+	background: #1691D6;
+	color: #fff;
+	font: normal 12px/30px "微软雅黑";
+	border: none;
+	padding: 0 12px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.buttonClose {
+	background: #EE3D11;
+	color: #fff;
+	font: normal 14px/30px "微软雅黑";
+	border: none;
+	padding: 0 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.tableform {
+	width:100%;
+}
+.tablefrom th {
+	border: 1px dashed #cccccc;
+}
+.tablefrom td {
+	border: 1px dashed #cccccc;
+}
+.tablefromMX th {
+	border: 0px;
+}
+.tablefromMX td {
+	border: 0px;
+}
+.tablefromPrint th {
+	border: solid thin #cccccc;
+	padding-left: 2px;
+}
+.tablefromPrint td {
+	border: solid thin #cccccc;
+	padding-left: 2px;
+}
+.tablefromMX .titleLineB {
+  border-bottom: #256fb8 4px solid;
+  height: 32px;
+  line-height: 32px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  text-align: left;
+}
+.tablefromMX .titleLineR {
+  border-bottom: #cbcdcc 4px solid;
+  height: 32px;
+  line-height: 32px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  text-align: right;
+}
+.tablefromMX fieldset {
+	width: 100%;
+	float: left;
+	border-top:  1px dashed #cccccc;
+	border-bottom:  1px dashed #cccccc;
+	border-left:  1px dashed #cccccc;
+	padding: 2px;
+	padding-right:5px；
+}
+.tablefromMX legend {
+	display: block;
+	color: #00afeb;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.inputspan{
+	display: inline-block;
+	position: relative;
+	width: 99%;
+}
+.inputspan i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	font-size: 24px;
+	margin-right: 26px;
+	margin-top: -5px;
+	color: red;
+	font-style: normal;
+}
+
+.nodeTable {
+	width:100%;
+	font-size:12px;
+	min-width:100px;
+}
+.nodeTable th {
+	border: 0px solid #cccccc;
+}
+
+.nodeTable td{
+	border: 0px solid #cccccc;
+	padding:4px;
+}
+.nodeTable input {
+	width: 98%;
+	border: 1px solid #a5aeb6;
+	padding: 1px 1px;
+	height: 22px;
+	font-size:	12px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 3px;
+}
+
+.nodeTable select {
+	width:100%;
+	height: 26px;
+	overflow: hidden;
+	border: 1px solid #a5aeb6;
+	font-size: 12px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border-radius: 1px;
+	*padding:0px;
+}
+
+.query-1 {
+	background: #1691D6;
+	color: #fff;
+	font: normal 12px/30px "微软雅黑";
+	border: none;
+	padding: 0 12px;
+	border-radius: 3px;
+	cursor: pointer;
+	width:70px;
+}
+.select-1 {
+	font-size:12px;
+	font-family: "微软雅黑", "宋体", Arial, sans-serif;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.autoScorll{
+	width:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+/*底部按钮面板*/
+.bottomNav {
+	background-color: #f2f2f2;
+	border:1px solid #AAA;
+	border-right:none;
+	border-left:none;
+	border-bottom:none;
+	z-index: 999;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height:40px;
+	line-height:40px;
+	text-align:right;
+	padding-right:50px;
+	width: 100%;
+	_position: absolute;
+	font-family:"微软雅黑", "宋体", Arial, sans-serif;
+	overflow: visible;
+}
