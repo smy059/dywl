@@ -56,4 +56,23 @@ class XFrontBase extends Controller
         $this->render('/error/close', array('message'=>$this->_conf['site_status_intro']));
         exit;
     }
+    
+      /**
+     * 取用户组列表
+     * @param $type
+     */
+    protected function _groupList($type = 'admin')
+    {
+        switch ($type) {
+            case 'admin':
+                return AdminGroup::model()->findAll();
+                break;
+            case 'user':
+                $criteria = new CDbCriteria();
+                $criteria->condition = " status_is ='Y' ";
+                return Admin::model()->findAll();
+                break;
+                
+        }
+    }
 }

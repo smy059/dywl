@@ -34,13 +34,13 @@ class User extends XBaseModel {
             array('password', 'length', 'max' => 32),
             array('realname, province, login_count, last_login_time, last_update_time, create_time', 'length', 'max' => 10),
             array('qq, telephone, mobile, register_ip, last_login_ip,company_regtime,company_year', 'length', 'max' => 15),
-            array('company_shareholder', 'length', 'min' => 6),
-            array('company_code, company_regmoney,company_name,will_txt', 'length', 'max' => 255),
+            array('company_shareholder,company_pic', 'length', 'min' => 0),
+            array('company_code, company_regmoney,company_name,will_txt', 'length', 'max' => 5000),
             array('status_is', 'length', 'max' => 6),
             array('intro', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
-            array('id, username, email, password, realname, qq,  group_id,  province,company_shareholder, city, area, http_url, telephone, mobile, address, intro, hash_string, status_is, register_ip, login_count, last_login_time, last_login_ip, last_update_time, create_time', 'safe', 'on' => 'search'),
+            array('id, username, email, password, realname, qq,  group_id, company_pic, province,company_shareholder, city, area, http_url, telephone, mobile, address, intro, hash_string, status_is, register_ip, login_count, last_login_time, last_login_ip, last_update_time, create_time', 'safe', 'on' => 'search'),
         );
     }
 
@@ -74,6 +74,7 @@ class User extends XBaseModel {
             'mobile' => '手机号',
             'company_name' => '终注册企业名称',
             'company_year' => '公司年',
+            'company_pic' => '资料图',
             'company_regtime' => '公司注册时间',
             'company_code' => '统一社会信用代码',
             'company_regmoney' => '公司注册资金',

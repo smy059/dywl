@@ -37,7 +37,9 @@ class UserController extends XAdminiBase {
         $model = new User('create');
         if (isset($_POST['User'])) {
             $_POST['User']['company_shareholder'] = (json_encode($_POST['User']['company_shareholder']));
-
+            if (isset($_POST['company_pic'])) {
+                $_POST['User']['company_pic'] = json_encode($_POST['company_pic']);
+            }
             $model->attributes = $_POST['User'];
             $id = $model->save();
             if ($id) {
@@ -67,7 +69,9 @@ class UserController extends XAdminiBase {
             else
                 $_POST['User']['password'] = md5($password);
             $_POST['User']['company_shareholder'] = (json_encode($_POST['User']['company_shareholder']));
-            
+            if (isset($_POST['company_pic'])) {
+                $_POST['User']['company_pic'] = json_encode($_POST['company_pic']);
+            }
             $model->attributes = $_POST['User'];
 
             if ($model->save()) {
@@ -75,7 +79,12 @@ class UserController extends XAdminiBase {
                 $this->redirect(array('index'));
             }
         }
-        $model->company_shareholder = json_decode(($model->company_shareholder), true);
+        if ($model->company_shareholder) {
+            $model->company_shareholder = json_decode($model->company_shareholder, true);
+        }
+        if ($model->company_pic) {
+            $model->company_pic = json_decode($model->company_pic, true);
+        }
         $this->group_list = parent::_groupList('user');
         $this->render('user_update', array('model' => $model));
     }

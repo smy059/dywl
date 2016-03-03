@@ -46,8 +46,8 @@
                         <li><a href="#"> 发票申请</a></li>
                         <li><a href="#">发票列表</a></li>
                         <li><a href="#">车辆合同</a></li>
-                        <li><a href="#">我的资料</a></li>
-                        <li><a href="#">修改密码</a></li> 
+                        <li><a href="<?php echo $this->createUrl('/user/index'); ?>">企业资料</a></li>
+                        <li><a href="<?php echo $this->createUrl('/user/password'); ?>">修改密码</a></li> 
                         <li><a href="<?php echo $this->createUrl('/user/loginout'); ?>">退出</a></li>
                     </ul>
 
@@ -59,12 +59,12 @@
                 <div class="col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
                         <li class="active"><a href="#">会员中心 <span class="sr-only">(current)</span></a></li>
-                        <li   > <a href="#" class="menu-icon fa fa-bar-chart-o"> 业务合同</a></li>
-                        <li><a href="#"> 发票申请</a></li>
+                        <li   > <a href="<?php echo $this->createUrl('/user/contract'); ?>" class="menu-icon fa fa-bar-chart-o"> 业务合同</a></li>
+                      
                         <li><a href="#">发票列表</a></li>
                         <li><a href="#">车辆合同</a></li>
-                        <li><a href="#">我的资料</a></li>
-                        <li><a href="#">修改密码</a></li>
+                        <li><a href="<?php echo $this->createUrl('/user/index'); ?>">企业资料</a></li>
+                        <li><a href="<?php echo $this->createUrl('/user/password'); ?>">修改密码</a></li>
                         <li><a href="<?php echo $this->createUrl('/user/loginout'); ?>">退出</a></li>
 
                     </ul> 
